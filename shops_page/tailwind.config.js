@@ -6,7 +6,8 @@ module.exports = {
     extend: {
         colors:{
 
-            'uiblue':'#15c4f8'
+            'uiblue':'#15c4f8',
+            'uigreen':'4cd964'
           
         }
 

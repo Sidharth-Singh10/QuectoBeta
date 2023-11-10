@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="pastel">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>DOCUMENT</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Gorditas&family=Open+Sans:wght@500&family=Playpen+Sans:wght@100;500&family=Poppins&display=swap"
+    rel="stylesheet"
+  />
     <style>
         #shops{
         border-top: 1px solid rgb(205, 201, 201);
@@ -15,12 +19,12 @@
             border-right: 2px solid black;
         }
 
-        .buttonbox{
+        /* .buttonbox{
               width: 50%;
               height: 100%;
 
               
-              display: flex;
+              display: flex;               CUSTOMS BUTTONS NOT CURRENTLY IN USE
               gap: 10px;
               justify-content: end;
         }
@@ -40,7 +44,7 @@
         .but1{
           background-color: #4cd964;
           border: none
-        }
+        } */
     </style>
 
 </head>
@@ -55,17 +59,16 @@
             </div >
 
             <div class="buttonbox">
-                <button class="but but1">Location</button>
+                <button class="btn btn-success">Location</button>
 
-                <button class="but but2">Explore</button>
-
+                <button class="btn btn-outline">Explore</button>
             </div>
            </div>
 
            <div class="w-full flex flex-col justify-center items-center mt-5">
             
                 <div class="w-fit">
-                    <p class="text-5xl font-semibold">
+                    <p class="text-5xl font-semibold body-font font-poppins" >
                         DISCOVER YOUR LOCAL
                     </p>
                 </div>
@@ -78,7 +81,7 @@
 
            </div>
         
-<!-- 
+            <!-- 
            <div class="w-auto bg-black mt-4">
                     <img src="a guy on sofa p 1.png" alt="" class="h-96 w-full">
            </div> -->
@@ -93,8 +96,8 @@
 
                     <div class=" w-full md:w-1/2 flex flex-col items-center " id="left">
 
-                                <div class="" id="shops">
-                                  <pl class="text-4xl">YOUR SHOPS </p>
+                                <div class="flex justify-around items-center" id="shops">
+                                  <p class="text-4xl">YOUR SHOPS </p>
                                 </div>
 
                      <div  class="flex w-full justify-around mt-5">
