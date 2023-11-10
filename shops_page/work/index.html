@@ -14,6 +14,33 @@
         #left{
             border-right: 2px solid black;
         }
+
+        .buttonbox{
+              width: 50%;
+              height: 100%;
+
+              
+              display: flex;
+              gap: 10px;
+              justify-content: end;
+        }
+
+        .but{
+          padding: 5px;
+          width: 110px;
+          height: 35px;
+          text-align: center;
+          font-size: 94%;
+          font-weight: 600;
+          border: 1px solid black;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+
+        .but1{
+          background-color: #4cd964;
+          border: none
+        }
     </style>
 
 </head>
@@ -25,12 +52,12 @@
 
                         <p class="text-4xl font-semibold"> QEUCTO</p>
 
-            </div>
+            </div >
 
-            <div>
-                <button class="btn btn-outline btn-lg">YOUR LOCATION</button>
+            <div class="buttonbox">
+                <button class="but but1">Location</button>
 
-                <button class="btn btn-success btn-lg">EXPLORE</button>
+                <button class="but but2">Explore</button>
 
             </div>
            </div>
