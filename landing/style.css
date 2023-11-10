@@ -1,3 +1,5 @@
+
+/* THIS IS THE BOILERPLATE SECTION YOU HAVE ADD THIS , THIS IS MANDATORY */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +21,12 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 120px;
+
 }
+
+/* THE BOILERPLATE CODE ENDS HERE */
+
+/* This is the navigation bar section */
 
 .nav {
   height: 100px;
@@ -27,7 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+
 }
 
 .navl {
@@ -39,14 +46,15 @@ body {
   width: 250px;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
+/* this is the button section follow the configuration for further design */
 .navr button {
   width: 100px;
   height: 38px;
-
+  margin: 0;
   border-radius: 6px;
   cursor: pointer;
   border: none;
@@ -63,15 +71,19 @@ body {
   margin-right: 8px;
 }
 
-.su {
+.navr .su {
   background-color: #4cd964;
   cursor: pointer;
   border-radius: 8px;
 }
 
+/* HERE THE NAVIGATION SECTION ENDS */
+
+
+/* THE CENTER SECTION STARTS FROM HERE NOW  */
 .center {
   height: 500px;
-
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,46 +91,56 @@ body {
   padding-bottom: 60px;
 }
 
+
+.head {
+  width: 100%;
+  height: 900px;
+  text-align: center;
+  height: auto;
+  
+}
+
+/*poistioning the images*/
 .center .head .img1 {
   position: absolute;
-  left: -28%;
+  left: -1%;
   top: 18%;
 }
 
 .center .head .img2 {
   position: absolute;
-  left: 98%;
+  left: 80%;
   top: 40%;
-}
-.head {
-  width: 650px;
-  height: 900px;
-  text-align: center;
-  height: auto;
 }
 
 .head h1 {
-  margin: 40px;
+  margin: 0;
   font-size: 60px;
   font-weight: 1000;
+  margin-bottom: 40px;
+ 
+
 }
 
-.but {
+.search-bar{
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+
 }
 
-.but .search {
+/* follow this color code for light black shades */
+.search-bar .search {
   height: 40px;
   width: 400px;
   border-radius: 6px;
   border: 0.8px solid rgb(180, 175, 175);
+  padding: 5px 9px;
 }
 
-.but .submit {
+.search-bar .submit {
   height: 40px;
   width: 100px;
   border-radius: 6px;
@@ -129,6 +151,15 @@ body {
   cursor: pointer;
 }
 
+/*The center code ends her */
+
+
+
+.main2 {
+  width: 100%;
+}
+
+/*how it works section  and basic flex and included main2 jo bada wala div hai*/
 .howitwork {
   width: 97%;
   height: 110px;
@@ -150,9 +181,8 @@ body {
   font-size: 35px;
 }
 
-.main2 {
-  width: 100%;
-}
+
+/*become a user wala section */
 
 .becomeuser {
   width: 97%;
@@ -366,7 +396,13 @@ body {
 .upart2 .content h3 {
   font-weight: 990;
 }
-/*lets works on card from here*/
+
+
+/*yaha pe khtm hota hai user wala section /
+
+
+
+/*lets works on card from here yeh section actually how it works ke neeche ata hai*/
 
 .card-group {
   height: 400px;
@@ -442,6 +478,8 @@ body {
     font-size: 1.6vw;
   }
 }
+
+/*card section ends here */
 
 
 /* Lets works on download section*/
@@ -536,7 +574,7 @@ body {
   width: 100%;
 }
 
-/*code for footer */
+/*code for footer starts from here */
 .footer{
   height: 150px;
   width: 100%;
