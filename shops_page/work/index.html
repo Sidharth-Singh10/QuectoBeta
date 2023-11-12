@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>DOCUMENT</title>
-    <style>
+  <style>
     #overlay {
     position: fixed;
     top: 0;
@@ -14,31 +14,28 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     backdrop-filter: blur(5px); /* Apply the blur effect */
-    z-index: 49; /* Ensure it's above other content but below popup (ref:popyp:z=50)*/
+    z-index: 49; /* Ensure it's above other content */
     display:none; /* Initially hidden */
-    }
+  }
 
-   
         #shops{
-  border-top: 2px solid #4cd964;
-  border-bottom: 2px solid #4cd964;
+  border-top: 2px solid rgba(128, 128, 128, 0.233);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.233);
         }
-        #left{
-            border-right: 2px solid black;
-        }   
-    </style>
+
+
+
+  </style>
 
 </head>
-<body class="flex flex-col ml-12 mt-7 mr-10 justify-evenly">
+<body >
+  <!-- blur karne wala div -->
+  <div id="overlay"></div>  
 
-   <!-- blur karne wala div -->
-   <div id="overlay"></div>  
+          <div class="flex flex-col ml-12 mt-7 mr-10 justify-evenly">
+            <!-- new header starts -->
 
-           
-
-          <!-- new header starts -->
-
-           <div class="navbar bg-base-100">
+           <div class="navbar rounded-lg first-letter: ">
 
             <div class=" w-1/3 ">
               <a class="btn btn-ghost grow text-5xl">QUECTO</a>
@@ -117,7 +114,6 @@
 
             <!-- NEW HEADER ENDS -->
 
-
               <!-- heading  -->
 
            <div class="w-full flex flex-col justify-center items-center mt-5">
@@ -135,7 +131,6 @@
                 </div>
 
            </div>
-        
 
 
            <!-- ignore below -->
@@ -155,9 +150,9 @@
             <div class="flex flex-col w-full mt-10 ">
 
 
-                    <div class=" w-full  flex flex-col items-center " id="left">
+                    <div class=" w-full  flex flex-col items-start " id="left">
 
-                                <div class="flex justify-around items-center" id="shops">
+                                <div class="flex h-20 w-full justify-start items-center" id="shops">
                                   <p class="text-4xl">YOUR SHOPS </p>
                                 </div>
 
@@ -190,7 +185,17 @@
 
                         </div>
                         <div>
-                          
+                          <!-- <div class="card w-60 bg-base-100 shadow-xl">
+                            <figure><img src="food1.png" alt="Shoes" /></figure>
+                            <div class="card-body">
+                              <h2 class="card-title">Jaiswal's</h2>
+                              <p>Sweats!!!!</p>
+                              <div class="card-actions justify-end">
+                                <button class="btn btn-info">Order</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
                         <div class="p-4">
                           <div class="bg-slate-200 rounded-lg p-4 shadow-md border-solid border-black border">
                               <h1 class="text-2xl font-semibold">ADD A SHOP</h1>
@@ -211,8 +216,9 @@
 
                     </div>
 
-                    <div class="w-full  flex flex-col items-center mt-5" id="right">
-                      <div class="" id="shops">
+                    <div class="w-full  flex flex-col items-start mt-10" id="right">
+
+                      <div class="h-20 flex justify-start items-center w-full" id="shops">
                           <pl class="text-4xl">Vendors Nearby</p>
                         </div>
 
@@ -249,18 +255,64 @@
                       
                   </div>  
 
-                   
+                  
+
+                  <div class="w-full  flex flex-col items-start mt-10" id="right">
+
+                    <div class="h-20 flex justify-start items-center w-full" id="shops">
+                        <pl class="text-4xl">Trending SHOPS Nearby</p>
+                      </div>
+
+           <div  class="flex w-full justify-start gap-3 mt-5">
+
+              <div>
+                  <div class="card w-60 bg-slate-200 shadow-xl">
+                      <figure><img src="food1.png" alt="Shoes" /></figure>
+                      <div class="card-body">
+                        <h2 class="card-title">Mart_cloud<div class="badge badge-sm badge-secondary">NEW</div></h2>
+                        
+                        <p>Just order</p> 
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-info">ADD</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+
+              <div>
+                  <div class="card w-60 bg-slate-200 shadow-xl">
+                      <figure><img src="food1.png" alt="Shoes" /></figure>
+                      <div class="card-body">
+                        <h2 class="card-title">getVeggies <div class="badge badge-sm badge-secondary">offers</div> </h2>
+                        <p>Veggies at cheapest</p>
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-info">ADD</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+             
+          </div>
+                    
+                    
+                </div>   
 
 
 
             </div>
 
 
+
+          </div>
+
+
+          
+
             
                   <!-- popWindow defined here -->
 
 
-                  <div class="bg-blue-200 z-50 hidden absolute top-1/3 left-1/3 rounded-2xl" id="popupForm">
+                  <div class="bg-blue-200 z-50 hidden absolute top-1/3 left-1/3 rounded-2xl blur-0" id="popupForm">
                     <div class="bg-green-200 p-6 rounded-lg shadow-md w-96">
                      
                       <div class="w-full flex justify-between items-center">
@@ -284,25 +336,30 @@
                   
 
 
-
-             
-              
-
+                 
+                  
 
 
 
-            
+
+
 
             <script>
 
 
               const openPopupButton = document.getElementById('openModal');
               const popupForm = document.getElementById('popupForm');
-              const cross = document.getElementById('cross')
+              const cross = document.getElementById('cross');
+              const overlay = document.getElementById('overlay');
+
 
 openPopupButton.addEventListener('click', () => {
-  overlay.style.display="block";
+  
+  // Toggle the hidden class to show/hide the form
+
+
   popupForm.classList.toggle('hidden');
+  overlay.style.display="block";
   popupForm.classList.add('flex');
   popupForm.classList.add('flex-col');
   popupForm.classList.add('justify-center');
@@ -314,6 +371,7 @@ cross.addEventListener('click', () => {
   popupForm.classList.toggle('hidden');
   overlay.style.display="none";
 });
+            
             </script>
             
 
