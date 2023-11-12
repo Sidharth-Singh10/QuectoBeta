@@ -1,0 +1,305 @@
+/* boiler plate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gorditas", serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Playpen Sans", cursive;
+    font-family: "Poppins", sans-serif;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main{
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+    padding: 10px 120px;
+   
+  }
+
+  /* navigation starts here */
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    height: 100px;
+    margin-bottom: 80px;
+  }
+  
+  .navbar .navbarl {
+    height: 100%;
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+  }
+  
+  
+  .navbarr{
+    width: 53%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  
+  }
+  
+  
+  .navbarr button {
+    width: 100px;
+    height: 38px;
+  
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+  .navbarr .si {
+    background-color: white;
+  
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 8px;
+    border: 1px solid black;
+  }
+  
+  .su {
+    background-color: #4cd964;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+
+  .navbarl a{
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    font-weight: 500;
+    font-size: 1.3vw;
+  }
+
+  #disc{
+    font-size: 1.8vw;
+    font-weight: 800;
+  }
+  
+  /* Navbar section ends from here */
+
+  .cont2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    height: auto;
+    justify-content: center;
+  }
+
+  .cont2 .head h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 30px;
+   
+  }
+
+  .cont2 .img{
+   
+    width: 50%;
+    background-position: center;
+    background-size: contain;
+    border: 2px solid black;
+    margin-bottom: 60px;
+  }
+
+  .cont2 .para{
+   
+    font-size: 20px;
+    width: 60%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .mission {
+    font-size:40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+   .para2{
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+  }
+
+  /* cont2 ends here*/
+  .cont3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 120px;
+  
+  }
+  .lets{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+ 
+   text-align: left;
+   padding: 0 15px;
+
+  }
+
+  .lets h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .fig{
+    width: 60%;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+ .team{
+  
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+ }
+
+ .team h2{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+ }
+
+ .team p{
+    font-size: 18px;
+    margin-bottom: 40px;
+ }  
+ .teampic
+ {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+   
+ }
+
+ .mem1 , .mem2, .mem3 , .mem4{
+    width: 220px;
+    height: 250px;
+    border: 1px solid black;
+    
+ }
+
+ .end
+ {
+    width: 100%;
+    background-color: yellow;
+    height: 400px;
+    margin-bottom: 100px;
+    display: flex;
+
+ }
+
+ .endleft{
+    width: 55%;
+    height: 100%;
+    background-color: grey;
+ }
+
+ .endright{
+    width: 45%;
+    height: 100%;
+    background-color: blueviolet;
+ }
+
+  .footer{
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .m{
+    width: 95%;
+    height: 80%;
+  
+    display: flex;
+  
+  }
+  
+  .m1, .m2{
+    width: 50%;
+    height: 100%;
+    border: 2px solid black;
+    color: white;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  .l1{
+    display: flex;
+    align-items: center;
+  }
+  
+  .l1 i{
+    font-size: 30px;
+    color: wheat;
+  }
+  
+  .li h4{
+    padding-top: 20px;
+  }
+  
+  .l2 p{
+      font-size: 13px;
+      font-weight: 700;
+  }
+  
+  
+  .l3 i{
+    font-size: 20px;
+  
+    padding: 0 4px;
+  }
+  
+  .m2{
+    padding-left: 25%;
+   
+  }
+  
+  .m2 .up1 h6{
+    font-size: 0.9vw;
+    
+  }
+  
+  .m2 .up2 h5{
+    font-size: 1.3vw;
+    font-weight: 700;
+  }
