@@ -105,8 +105,8 @@
   }
 
   .cont2 .head h1{
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 700;
     margin-bottom: 30px;
    
   }
@@ -116,7 +116,7 @@
     width: 50%;
     background-position: center;
     background-size: contain;
-    border: 2px solid black;
+ 
     margin-bottom: 60px;
   }
 
@@ -130,7 +130,7 @@
 
   .mission {
     font-size:40px;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -147,7 +147,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 80px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
   
   }
   .lets{
@@ -161,8 +161,8 @@
   }
 
   .lets h3{
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 700;
     margin-bottom: 20px;
     text-align: left;
   }
@@ -177,39 +177,65 @@
  .team{
   
     width: 100%;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 120px;
+    margin-top: 40px;
  }
 
  .team h2{
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 710;
     margin-bottom: 20px;
  }
 
  .team p{
     font-size: 18px;
     margin-bottom: 40px;
- }  
+
+ }
+ 
+ .team-con{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
  .teampic
  {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     width: 100%;
-    flex-wrap: wrap;
+    height: 70%;
+    flex-wrap: nowrap;
+    margin-top: 10px;
    
  }
 
  .mem1 , .mem2, .mem3 , .mem4{
-    width: 220px;
-    height: 250px;
-    border: 1px solid black;
+    width: 230px;
+    height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     
+ }
+
+ .pic{
+ 
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 0.6px solid black;
  }
 
  .end
@@ -225,14 +251,62 @@
  .endleft{
     width: 55%;
     height: 100%;
-    background-color: grey;
+    background-color: rgb(220, 215, 215);
+    padding: 5.8vw ;
+    padding-right: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+ }
+
+ .el1 p{
+  
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 40px;
+ }
+
+ .el1 h2{
+  font-size: 4vw;
+  font-weight: 600;
+ }
+
+ .el2 button{
+  width: 100px;
+  height: 38px;
+
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  background-color: #4cd964;
+  cursor: pointer;
+  border-radius: 8px;
  }
 
  .endright{
     width: 45%;
     height: 100%;
-    background-color: blueviolet;
+   
  }
+ .endright .image{
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+ }
+
+ .image img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+ }
+
+ /* footer section */
 
   .footer{
     height: 150px;
