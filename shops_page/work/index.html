@@ -37,9 +37,9 @@
 
            <div class="navbar rounded-lg first-letter: ">
 
-            <div class=" w-1/3 ">
+            <div class=" w-full flex justify-between   md:w-1/3 ">
               <a class="btn btn-ghost grow text-5xl">QUECTO</a>
-              <div class="dropdown dropdown-end">
+              <div class="dropdown dropdown-end hidden md:block">
                 <label tabindex="0" class="btn btn-ghost ">
                   <div class="w-fit flex justify-center items-center">               
                     <p>
@@ -60,10 +60,32 @@
                   <li><a>TAKEAWAY</a></li>
                 </ul>
               </div>
+              <!-- hamburger menu starts -->
+              <div class="drawer z-50 w-fit md:hidden ">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content w-fit">
+                  <!-- Page content here -->
+                  <label for="my-drawer" class="btn btn-ghost drawer-button">
+                    <img src="icons8-hamburger-50.png" alt="">
+                  </label>
+                </div> 
+                <div class="drawer-side">
+                  <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                  <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                    <!-- Sidebar content here -->
+                    <li><a>Profile</a></li>
+                    <li><a>Location</a></li>
+                    <li><a>Explore more</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+
+              <!-- hamburger menu ends -->
 
             </div>
 
-            <div class="flex justify-end w-2/3">
+            <div class=" hidden md:flex md:justify-end md:w-2/3">
 
               <div class="buttonbox pr-5">
                 
@@ -312,7 +334,7 @@
                   <!-- popWindow defined here -->
 
 
-                  <div class="bg-blue-200 z-50 hidden absolute top-1/3 left-1/3 rounded-2xl blur-0" id="popupForm">
+                  <div class="bg-blue-200 z-50 hidden fixed top-1/3 left-1/3 rounded-2xl blur-0" id="popupForm">
                     <div class="bg-green-200 p-6 rounded-lg shadow-md w-96">
                      
                       <div class="w-full flex justify-between items-center">
