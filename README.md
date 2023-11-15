@@ -1,4 +1,4 @@
-# QuectoBeta
+# QuectoBetas
 
 
 Introduction ->
