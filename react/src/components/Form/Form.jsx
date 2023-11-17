@@ -1,15 +1,16 @@
 import React from "react";
 
+import SubmitBut from "../Button/submit";
 const Form = () => {
   return (
     <>
-      <div className="w-100 h-auto mt-8 mx-36 flex flex-row justify-between align-center ">
+      <div className="w-100 h-auto mt-8 mx-36 flex flex-row justify-between align-center mb-16" >
         <div className="w-3/5 h-100">
           {/* Name Input */}
           <div className="mb-4">
             <label
               htmlFor="name"
-              className=" text-3xl mb-6 font-medium text-gray-600 inline-block"
+              className=" text-2xl mb-4 font-medium text-gray-600 inline-block"
             >
               Name
             </label>
@@ -18,7 +19,8 @@ const Form = () => {
               type="text"
               id="name"
               name="name"
-              className="w-3/5 p-2 border-2 border-black opacity-20 rounded-md focus:outline-none focus:border-blue-500"
+              placeholder="Your name"
+              className="w-3/5 p-2 border-2 mb-8 border-black opacity-90 border-opacity-20  rounded-md focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -26,7 +28,7 @@ const Form = () => {
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="text-3xl mb-6 inline-block font-medium text-gray-600"
+              className="text-2xl mb-4 inline-block font-medium text-gray-600"
             >
               Email
             </label>
@@ -35,7 +37,8 @@ const Form = () => {
               type="email"
               id="email"
               name="email"
-              className="w-3/5 p-2 border-2 border-black opacity-20  rounded-md focus:outline-none focus:border-blue-500"
+              placeholder="Your email"
+              className="w-3/5 p-2 border-2 mb-8 border-black opacity-90 border-opacity-20  border-opacity-20  rounded-md focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -43,7 +46,7 @@ const Form = () => {
           <div className="mb-4">
             <label
               htmlFor="subject"
-              className="text-3xl mb-6  inline-block font-medium text-gray-600"
+              className="text-2xl mb-4  inline-block font-medium text-gray-600"
             >
               Subject
             </label>{" "}
@@ -52,7 +55,8 @@ const Form = () => {
               type="text"
               id="subject"
               name="subject"
-              className="w-3/5 p-2  border-2 border-black opacity-20  rounded-md focus:outline-none focus:border-blue-500"
+              placeholder="Subject of your message"
+              className="w-3/5 p-2 mb-8 border-2 border-black   border-opacity-20  rounded-md focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -60,7 +64,7 @@ const Form = () => {
           <div className="mb-4">
             <label
               htmlFor="message"
-              className="text-3xl mb-6 inline-block font-medium text-gray-600"
+              className="text-2xl mb-4 inline-block font-medium text-gray-600"
             >
               Message
             </label>{" "}
@@ -69,24 +73,17 @@ const Form = () => {
               id="message"
               name="message"
               rows="4"
-              className="w-3/5 p-2 border-2 border-black opacity-20  rounded-md focus:outline-none focus:border-blue-500"
+              placeholder="Write your message here"
+              className="w-3/5 p-2 border-2 border-black opacity-90 border-opacity-20  rounded-md focus:outline-none focus:border-blue-500"
             ></textarea>
           </div>
 
-          {/* Submit Button */}
-          <div className="flex justify-start mt-14 align-center">
-            <button
-              type="submit"
-              className="bg-blue-500 text-white px-12 py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue "
-            >
-              Submit
-            </button>
-          </div>
+          <SubmitBut />
         </div>
 
         <div className="w-2/5 bg-pink-100 object-cover object-center">
           <img
-            src="public\img2.jpg"
+            src="public\img3.jpg"
             alt=""
             className="object-cover object-center"
           />
