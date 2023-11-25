@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer.jsx"
 const Contact = ()=>{
   return(
     <>
+  
     <Header />
     <Title />
     <Form />
