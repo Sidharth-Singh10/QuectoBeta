@@ -13,6 +13,9 @@ export default {
       colors:{
         'btcol': '#4cd964',
       },
+      height:{
+        'custom1':'46rem',
+      },
     },
   },
   plugins: [require('daisyui')],
