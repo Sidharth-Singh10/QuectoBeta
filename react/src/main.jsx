@@ -8,6 +8,6 @@ import Button from "./components/Button/button";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
 
-    <Contact />
+    <Payment />
   </React.StrictMode>
 );
