@@ -163,6 +163,11 @@ body {
   cursor: pointer;
 }
 
+.search-bar .submit:hover{
+  scale: 1.06;
+  border: 1px solid black;
+}
+
 /*The center code ends her */
 
 
