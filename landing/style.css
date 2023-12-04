@@ -294,6 +294,8 @@ body {
   border-radius: 8px;
 }
 
+
+
 .user2 {
   display: flex;
   border-top: 1px solid rgb(205, 201, 201);
@@ -586,6 +588,10 @@ body {
   font-weight: 800;
 }
 
+.shopl .content button:hover{
+  scale: 1.06;
+}
+
 .space{
   height: 100px;
   width: 100%;
@@ -659,4 +665,9 @@ body {
 .m2 .up2 h5{
   font-size: 1.3vw;
   font-weight: 700;
+}
+
+.content button:hover{
+  background-color: black;
+  color: white;
 }
