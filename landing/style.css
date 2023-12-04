@@ -43,6 +43,8 @@ body {
   font-weight: 900;
 }
 
+
+
 .navr {
   width: 250px;
   height: 60px;
@@ -69,13 +71,22 @@ body {
   border: 1px solid black;
   cursor: pointer;
   border-radius: 8px;
-  margin-right: 8px;
+  margin-right: 15px;
 }
 
 .navr .su {
   background-color: #4cd964;
   cursor: pointer;
   border-radius: 8px;
+}
+
+.si:hover{
+  scale: 1.05;
+  transition: all .3s;
+}
+
+.su:hover{
+  scale: 1.05;
 }
 
 /* HERE THE NAVIGATION SECTION ENDS */
