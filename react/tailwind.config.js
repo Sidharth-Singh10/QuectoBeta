@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      scale: {
+        '102': '1.02',
+      },
       backgroundImage: {
         'hero-pattern': "url('/img/hero-pattern.svg')",
         'contact': "url(public\img2.jpg)"
