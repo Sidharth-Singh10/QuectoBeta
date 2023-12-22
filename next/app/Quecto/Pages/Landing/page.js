@@ -10,7 +10,7 @@ const mediumScreenPadding = "md:px-28";
 const buttonBase =
   "text-xs px-2 py-1 rounded-md md:text-md md:font-bold border border-black";
 const signInButton = `${buttonBase} md:px-5 md:py-2 md:w-24 md:rounded-lg`;
-const searchButton = `${buttonBase} md:px-5 md:py-2 md:w-28 md:rounded-lg`;
+const searchButton = `${buttonBase} md:px-8 md:py-2 md:w-36 md:rounded-lg  md:text-lg md:font-light`;
 
 export function Top() {
   return (
@@ -38,7 +38,7 @@ export function Top2() {
           Discover the best <br />
           local stores{" "}
         </h1>
-        <div className="w-4/5 h-auto flex justify-center gap-4 mt-12 md:mt-16">
+        <div className="w-5/6 h-auto flex justify-center gap-4 mt-12 md:mt-16">
           <input
             type="search"
             placeholder="Enter your location"
