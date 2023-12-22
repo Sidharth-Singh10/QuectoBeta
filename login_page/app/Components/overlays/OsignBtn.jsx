@@ -1,4 +1,5 @@
 'use client'
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
 const OsignBtn = (props) => {
@@ -15,9 +16,14 @@ const OsignBtn = (props) => {
         transition: 'transform 80ms ease-in',
       };
 
+  const router = useRouter();
+  const handleClick = () => {
+    router.push(props.route);
+  };
+
   return (
     <div>
-      <button style={buttonStyle}>{props.texts}</button>  
+      <button style={buttonStyle} onClick={handleClick} >{props.texts}</button>  
     </div>
   )
 }

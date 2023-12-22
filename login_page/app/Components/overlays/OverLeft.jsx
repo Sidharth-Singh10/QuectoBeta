@@ -1,13 +1,13 @@
 import React from 'react'
 import OsignBtn from './OsignBtn'
-
-const OverRight = (props) => {
+// style={{ background: 'linear-gradient(to right, #FF4B2B, #FF416C)' }}
+const OverLeft = (props) => {
   return (
-    <div className=' h-full flex flex-col justify-center items-center' style={{ background: 'linear-gradient(to right, #FF4B2B, #FF416C)' }}>
+    <div className=' h-full flex flex-col justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...' >
     
 
         <div className='text-4xl font-extrabold text-white '>
-            Hello,Friend!
+           Welcome BACK!
         </div>
 
         <div className='flex justify-center mt-2'>
@@ -19,7 +19,7 @@ const OverRight = (props) => {
         </div>
 
         <div className='mt-2'>
-            <OsignBtn texts='Sign up' route={props.routes}/>
+            <OsignBtn texts='Login' route={props.routes}/>
         </div>
 
 
@@ -28,5 +28,5 @@ const OverRight = (props) => {
   )
 }
 
-export default OverRight
+export default OverLeft
 
