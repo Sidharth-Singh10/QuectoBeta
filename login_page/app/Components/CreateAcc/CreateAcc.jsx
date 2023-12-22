@@ -9,7 +9,7 @@ const CreateAcc = () => {
 
 <div className="flex flex-col justify-between items-center">
 
-<div className='text-5xl mb-3 font-bold'>
+<div className='text-5xl mb-3 text-center font-bold'>
     Create Account
 </div>
 

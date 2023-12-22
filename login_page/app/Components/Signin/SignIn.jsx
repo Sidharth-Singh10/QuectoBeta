@@ -9,7 +9,7 @@ const SignIn = () => {
     <div className="flex flex-col justify-between items-center">
 
         <div className='text-5xl mb-3 font-bold'>
-            Sign in
+            Login in
         </div>
 
         <div className='mb-2 '>
