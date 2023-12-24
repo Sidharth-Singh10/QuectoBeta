@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialBtn from './socialBtn'
 import TextField from './TextField'
-import SignBtn from './SignBtn'
+import BtnRed from './BtnRed'
 
 const SignIn = () => {
   return (
@@ -21,7 +21,7 @@ const SignIn = () => {
         </div>
 
         <div>
-            <div className="flex flex-col justify-around mt-0 gap-2">
+            <div className="flex flex-col justify-around mt-1 gap-2">
 
                 <TextField placeholder="Email" types="text"/>
 
@@ -35,7 +35,7 @@ const SignIn = () => {
         </div>
 
         <div className='mt-2'>
-        <SignBtn texts="login"/>     
+        <BtnRed texts="login"/>     
         </div>
 
 

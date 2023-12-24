@@ -1,3 +1,5 @@
+import Form from './Animation/Form';
+import Overlay from './Animation/Overlay';
 import SignIn from './Components/Signin/SignIn';
 import OverRight from './Components/overlays/OverRight';
 
@@ -16,25 +18,22 @@ export default function Home()
     backgroundColor: '#f6f5f7',
   };
 
+ 
+
   return (
     <div>
       <div className="w-screen h-screen flex justify-center items-center" style={mainDivStyle}>
 
-        <div className='h-4/5 w-3/5 flex justify-around items-center' style={bodyStyle}>
+        <div className='h-4/5 relative w-3/5 ' style={bodyStyle}>
+
+          <Overlay/>
           
-
-            <div className='w-1/2 '>
-            <SignIn />
-            </div>
-
-            <div className='w-1/2 h-full'>
-            <OverRight/>
-            </div>
-
-            
+       
           
+          
+        </div>  
         </div>
       </div>
-    </div>
+  
   );
 }

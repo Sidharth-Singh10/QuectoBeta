@@ -1,12 +1,9 @@
-'use client'
 import React from 'react'
 
-const SignBtn = (props) => {
-    
-
+const BtnBlue = (props) => {
   return (
     <div>
-      <button class="btn bg-[#FF4B2B] 
+        <button className="btn bg-[#da4bb1] 
       hover:bg-[#ff392b]
        pt-3 pb-3 pl-10 pr-10
         uppercase
@@ -17,4 +14,4 @@ const SignBtn = (props) => {
   )
 }
 
-export default SignBtn
+export default BtnBlue

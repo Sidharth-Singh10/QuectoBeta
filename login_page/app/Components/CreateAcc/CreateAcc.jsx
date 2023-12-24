@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialBtn from '../Signin/socialBtn'
 import TextField from '../Signin/TextField'
-import SignBtn from '../Signin/SignBtn'
+import BtnRed from '../Signin/BtnRed'
 
 const CreateAcc = () => {
   return (
@@ -17,7 +17,7 @@ const CreateAcc = () => {
 <SocialBtn/>
 </div>
 
-<div className='text-sm m-0 pd-0'>
+<div className='text-sm mt-2 pd-0'>
     or use your email for registration
 </div>
 
@@ -37,8 +37,8 @@ const CreateAcc = () => {
 
 
 
-<div className='mt-2'>
-<SignBtn texts="Sign Up"/>     
+<div className='mt-3'>
+<BtnRed texts="Sign Up"/>     
 </div>
 
 </div>
