@@ -1,12 +1,12 @@
 'use client'
 import React, { useState } from 'react';
-import BtnTry from './BtnTry';
-import TestLeft from './TestLeft';
-import TestRight from './TestRight';
 import CreateAcc from '../Components/CreateAcc/CreateAcc';
 import SignIn from '../Components/Signin/SignIn';
+import BtnOver from './BtnOver';
+import OverLeft from './OverLeft';
+import OverRight from './OverRight';
 
-export default function Overlay(props) {
+export default function MainPage(props) {
   const [overlayPosition, setOverlayPosition] = useState(0); // State to track the position of the overlay
   const [isHiddenLeft, setIsHiddenLeft] = useState(false); 
   const [isHiddenRight, setIsHiddenRight] = useState(true); 
@@ -34,16 +34,16 @@ export default function Overlay(props) {
             <div className='relative'>
 
             <div id="left" className='absolute z-10'  style={{ transform: `translateX(${isHiddenLeft ? '-100%' : '0%'})`, transition: 'transform 0.5s ease-in-out' }}>
-              <TestLeft />
+              <OverLeft />
             </div>
 
             <div id="right" className='absoulute z-20'  style={{ transform: `translateX(${isHiddenRight ? '100%' : '0%'})`, transition: 'transform 0.5s ease-in-out' }}>
-               <TestRight/>
+               <OverRight/>
             </div>
 
             </div>
     
-            <BtnTry texts="Click me" handleclick={moveDiv} className="relative top-3/4"/>
+            <BtnOver texts="Click me" handleclick={moveDiv} className="relative top-3/4"/>
           </div>
 
           <div id='form' className=' h-full flex flex-col  justify-center items-center overflow-hidden absolute z-40 w-1/2'

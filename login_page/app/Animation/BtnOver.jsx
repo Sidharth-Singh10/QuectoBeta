@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BtnTry = (props) => {
+const BtnOver = (props) => {
 
  
 
@@ -22,4 +22,4 @@ const BtnTry = (props) => {
   )
 }
 
-export default BtnTry
+export default BtnOver

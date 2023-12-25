@@ -1,6 +1,6 @@
 import React from 'react'
-import SocialBtn from '../Signin/socialBtn'
-import TextField from '../Signin/TextField'
+import SocialBtn from '../Misc/socialBtn'
+import TextField from '../Misc/TextField'
 import BtnRed from '../Signin/BtnRed'
 
 const CreateAcc = () => {

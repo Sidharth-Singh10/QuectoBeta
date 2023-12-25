@@ -1,7 +1,4 @@
-import Form from './Animation/Form';
-import Overlay from './Animation/Overlay';
-import SignIn from './Components/Signin/SignIn';
-import OverRight from './Components/overlays/OverRight';
+import MainPage from './Animation/MainPage';
 
 export default function Home() 
 {
@@ -26,7 +23,7 @@ export default function Home()
 
         <div className='h-4/5 relative w-3/5 ' style={bodyStyle}>
 
-          <Overlay/>
+          <MainPage/>
           
        
           
