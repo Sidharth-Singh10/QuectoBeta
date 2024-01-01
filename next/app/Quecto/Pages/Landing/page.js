@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer/page";
+import CaretDownIcon from "@/components/Icons/icon";
 // Common styling values
 const containerPadding = "px-4";
 const largeScreenPadding = "lg:px-32";
@@ -77,7 +78,7 @@ export function Dropdown(props) {
           <h2 className="text-lg md:text-2xl py-8 font-extrabold">
             {props.name}
           </h2>
-          <button onClick={toggleDropdown}>*</button>
+          <button onClick={toggleDropdown}><CaretDownIcon /></button>
         </div>
       </div>
 
@@ -101,8 +102,8 @@ export function HowItWorks() {
       <div
         className={`${containerPadding} ${largeScreenPadding} ${mediumScreenPadding}`}
       >
-        <div className=" w-full  flex flex-row">
-          <div className="w-1/3 p-2 lg:p-6">
+        <div className=" w-full py-2 flex flex-row">
+          <div className="w-1/3 p-2  lg:p-6">
             <div className=" w-full flex flex-col items-center gap-4 ">
               <img src="/img9.png" width={200}></img>
               <div className="w-full flex flex-col gap-2 lg:gap-4">
@@ -164,7 +165,7 @@ export function BUser() {
             <div className="w-1/2 md:w-2/5 p-4 md:p-8  flex flex-col gap-3 md:gap-6 items-left justify-center">
               <h1 className=" text-sm md:text-3xl font-bold">As a customer</h1>
               <p className="text-xxs md:text-lg">Enjoy the convenience of shopping from local stores. All you need is a device and our app</p>
-              <button className="border border-black w-3/4 md:p-2 rounded-md md:rounded-lg text-xxs md:text-base font-semibold">Shop now</button>
+              <button className="border border-black w-3/4 md:p-2 rounded-md md:rounded-lg text-xxs md:text-base font-semibold duration-300 hover:bg-black hover:text-white">Shop now</button>
             </div>
 
           </div>
@@ -177,11 +178,11 @@ export function BUser() {
             <div className="w-1/2 md:w-2/5 p-4 md:p-8  flex flex-col gap-3 md:gap-6 items-left justify-center">
               <h1 className=" text-sm md:text-3xl font-bold">As a store owner</h1>
               <p className="text-xxs md:text-lg">Grow your business with Quecto. Reach more customers and expand your business through our platform</p>
-              <button className="border border-black w-3/4 md:p-2 rounded-md md:rounded-lg text-xxs md:text-base font-semibold">Partner wtih us</button>
+              <button className="border border-black w-3/4 md:p-2 rounded-md md:rounded-lg text-xxs md:text-base font-semibold duration-300 hover:bg-black hover:text-white  ">Partner wtih us</button>
             </div>
           </div>
 
-          <div className="h-1/3 flex flex-row border-b border-black border-opacity-30">
+          <div className="h-1/3 flex flex-row ">
           <div className=" w-1/2 md:w-3/5 flex justify-center items-center">
               <img src="/img5.png" width={300} height={500}></img>
             </div>
@@ -189,7 +190,7 @@ export function BUser() {
             <div className="w-1/2 md:w-2/5 p-4 md:p-8  flex flex-col gap-3 md:gap-6 items-left justify-center">
               <h1 className=" text-sm md:text-3xl font-bold">As a team</h1>
               <p className="text-xxs md:text-lg">Join our team and contribute to building a top notch online platform to support the local businesses of India</p>
-              <button className="border border-black w-3/4 md:p-2 rounded-md md:rounded-lg text-xxs md:text-base font-semibold">Work with us</button>
+              <button className="border border-black w-3/4 md:p-2 rounded-md md:rounded-lg text-xxs md:text-base font-semibold duration-300 hover:bg-black hover:text-white">Work with us</button>
             </div>
           </div>
         </div>
